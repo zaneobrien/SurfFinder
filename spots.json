@@ -1,0 +1,28 @@
+{
+  "SurfSpot1" : {
+      "BestTide" : 1.2,
+      "WorstTide" : 5.1,
+      "BestSize" : 5
+  },
+    "SurfSpot2" : {
+        "BestTide" : 1.2,
+        "WorstTide" : 5.1,
+        "BestSize" : 7
+    },
+    "SurfSpot3" : {
+        "BestTide" : 1.2,
+        "WorstTide" : 5.1,
+        "BestSize" : 3
+    },
+    "SurfSpot4" : {
+        "BestTide" : 1.2,
+        "WorstTide" : 5.1,
+        "BestSize" : 2
+    },
+    "SurfSpot5" : {
+        "BestTide" : 1.2,
+        "WorstTide" : 5.1,
+        "BestSize" : 1
+    },
+
+}
