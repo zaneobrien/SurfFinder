@@ -1,1 +1,2 @@
-export const APIKEY = '12345';
+var APIKEY = 'XXXXXXXXXX';
+exports.KEY = APIKEY;
