@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Surfing is cool</title>
+      <script src="https://unpkg.com/vue"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+      <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <style>
+      body {
+            background-color: #ACBAB6;
+            }
+      </style>
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+    <h1>Surf Conditions</h1>
+
+
+
+    <div class="app">
+        <line-chart v-if="loaded" :chart-labels="labels" :chart-data="results"> </line-chart>
+    </div>
+    <script
+        src = "Surf.js">
+    </script>
+</body>
+</html>
