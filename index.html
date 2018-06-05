@@ -7,20 +7,15 @@
       <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <style>
-      body {
-            background-color: #ACBAB6;
-            }
+          body {background-color: #ACBAB6;}
       </style>
       <link rel="stylesheet" href="style.css">
-   </head>
-
+    </head>
     <h1>Surf Conditions</h1>
-
-
-
     <div class="app">
-        <line-chart v-if="loaded" :chart-labels="labels" :chart-data="results"> </line-chart>
+        <line-chart v-if="loaded" :chart-labels="labels" :chart-data="results" :chart-wind="wind"> </line-chart>
     </div>
+    <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
     <script
         src = "Surf.js">
     </script>
