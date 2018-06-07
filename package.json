@@ -1,0 +1,15 @@
+{
+  "name": "SurfFinder",
+  "version": "0.0.1",
+  "description": "Ocean Data",
+  "main": "Surf.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaneobrien/SurfFinder.git"
+  },
+  "author": "Zane O'Brien",
+  "license": "MIT"
+}

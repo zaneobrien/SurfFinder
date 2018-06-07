@@ -1,5 +1,7 @@
-const APIKEY = "XXXXXXXXXXX";
-const url = "http://magicseaweed.com/api/" + APIKEY + "/forecast/?spot_id=4564units=us&fields=localTimestamp,swell.maxBreakingHeight,wind.speed";
+const API_KEY = "XXXXXXXXXXXXXXXX";
+const PROXY_URL = "https://cors-anywhere.herokuapp.com/"
+const MAGICSEAWEED_URL = "https://magicseaweed.com/api/" + API_KEY + "/forecast/?spot_id=4564units=us&fields=localTimestamp,swell.maxBreakingHeight,wind.speed";
+const URL = PROXY_URL + MAGICSEAWEED_URL;
 
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000),
@@ -104,7 +106,7 @@ Vue.component('line-chart', {
         intersect: false,
       },
       legend: {
-        display: false
+        display: true
       },
       responsive: true,
       maintainAspectRatio: false
@@ -155,7 +157,7 @@ var vm = new Vue({
   },
   methods: {
       requestData () {
-          axios.get(url).then(response => {
+          axios.get(URL).then(response => {
               //this.results = response.data; // the raw data
               this.labels = getTimestamps(response.data);
               this.results = getSurfHeight(response.data);
