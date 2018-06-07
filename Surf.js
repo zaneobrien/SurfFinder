@@ -1,4 +1,4 @@
-const API_KEY = "XXXXXXXXXXXXXXXX";
+const API_KEY = "XXXXXXXXXXX";
 const PROXY_URL = "https://cors-anywhere.herokuapp.com/"
 const MAGICSEAWEED_URL = "https://magicseaweed.com/api/" + API_KEY + "/forecast/?spot_id=4564units=us&fields=localTimestamp,swell.maxBreakingHeight,wind.speed";
 const URL = PROXY_URL + MAGICSEAWEED_URL;
@@ -79,7 +79,8 @@ Vue.component('line-chart', {
       scales: {
         yAxes: [{
           ticks: {
-            max:12,
+            //some low value so the max gets updated to highest value
+            suggestedMax: 8,
             stepSize : 1,
             beginAtZero: true,
           },
