@@ -31,7 +31,7 @@ function timeConverter(UNIX_timestamp){
 function getTimestamps(obj) {
     var array = [];
     for (var i = 0;i< obj.length;i++) {
-        array[i] = timeConverter(obj[i]["localTimestamp"]);
+        array[i] = timeConverter(obj[i]["timestamp"]);
     }
     return array
 }
