@@ -7,7 +7,7 @@ Unfortunately, this app requires an API key and its kind of a hassle to obtain o
 ## Demo
 In order to view a demo, visit [www.zaneobrien.com](http://www.zaneobrien.com/SurfFinder/Surf.html)
 
-## Detils
+## Details
 Presumably, this data can be used a general weather forecast for Surf/Ocean conditions in San Diego because even though this data is queried for the beach 'Grandview' the information wont change significantly for all of San Diego. Basically if theres big waves breaking in North San Diego, there will be big waves breaking in South San Diego.
 
 ## License
