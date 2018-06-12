@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Surfing is cool</title>
+      <title>San Diego Surf Conditions</title>
       <script src="https://unpkg.com/vue"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
       <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
@@ -12,12 +12,14 @@
       <link rel="stylesheet" href="style.css">
     </head>
     <div class = "banner">
-        <h1>Surf Conditions</h1>
+        <h1>San Diego Surf Conditions</h1>
         <div class="app">
             <line-chart v-if="loaded" :chart-labels="labels" :chart-data="results" :chart-wind="wind"> </line-chart>
         </div>
-        <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
     </div>
+    <div class="ms">
+        <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
+    <div>
     <script
         src = "Surf.js">
     </script>

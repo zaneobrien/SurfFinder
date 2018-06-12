@@ -1,15 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   color: #494C4A;
 
   }
-  .banner{
-    	background: url("/IMG_5417.jpg") no-repeat;
-    	min-height: 860px;
-    	background-size: cover;
-    	-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-    	position: relative;
-  }
+.banner{
+  	background: url("../images/IMG_5417.jpg") no-repeat;
+  	min-height: 860px;
+  	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	position: relative;
+}
+.ms {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
