@@ -15,7 +15,7 @@ Presumably, this data can be used a general weather forecast for Surf/Ocean cond
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:5000
+# serve at localhost:5000
 npm build/dev-server.js
 ```
 
