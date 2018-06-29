@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/zaneobrien/SurfFinder.svg?branch=master)](https://travis-ci.com/zaneobrien/SurfFinder)
+
 # SurfFinder
 > Generate beautiful charts to evaluate surf conditions in San Diego
 
