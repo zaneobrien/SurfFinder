@@ -14,5 +14,5 @@ steps:
 
 - script: |
     npm install
-    npm build /dev-server.js
+    npm build 
   displayName: 'npm install and build'
