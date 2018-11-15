@@ -18,7 +18,7 @@ Presumably, this data can be used a general weather forecast for Surf/Ocean cond
 npm install
 
 # serve at localhost:5000
-npm build/dev-server.js
+node build/dev-server.js
 ```
 
 ## License
