@@ -4,7 +4,7 @@
   "description": "Ocean Data",
   "main": "Surf.js",
   "scripts": {
-    "start": "echo \"No tests\" && exit 0",
+    "build": "node build/dev-server.js",
     "test": "echo \"No tests\" && exit 0"
   },
   "repository": {
