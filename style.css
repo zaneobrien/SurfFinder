@@ -12,7 +12,7 @@ h1 {
 
   }
 .banner{
-  	background: url("../images/IMG_5417.jpg") no-repeat;
+  	background: url("../static/IMG_5417.jpg") no-repeat;
   	min-height: 860px;
   	background-size: cover;
   	-webkit-background-size: cover;
