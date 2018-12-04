@@ -11,12 +11,12 @@ app.get('/', function (req, res) {
     res.sendfile('Surf.html');
 });
 
-var port = 8080;
+var port = 8081;
 var uri = 'http://localhost:' + port;
 
- //Listen to port 5000
-app.listen(8080, function () {
+ //Listen to port 8081
+app.listen(8081, function () {
     console.log('Dev app listening on port ' + port);
 });
 
-opn(uri)
+opn(uri).catch(() => {})

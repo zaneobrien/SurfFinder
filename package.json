@@ -5,6 +5,7 @@
   "main": "Surf.js",
   "scripts": {
     "build": "node build/dev-server.js",
+    "start": "node build/dev-server.js",
     "test": "echo \"No tests\" && exit 0"
   },
   "repository": {

@@ -1,4 +1,4 @@
-const API_KEY = "XXXXXXXX";
+const API_KEY = "84001e540eb6e20bee6851c4917f560a";
 const PROXY_URL = "https://cors-anywhere.herokuapp.com/"
 const MAGICSEAWEED_URL = "https://magicseaweed.com/api/" + API_KEY + "/forecast/?spot_id=4564units=us&fields=timestamp,swell.maxBreakingHeight,wind.speed";
 const URL = PROXY_URL + MAGICSEAWEED_URL;
@@ -115,8 +115,6 @@ Vue.component('line-chart', {
   }
 },
     mounted () {
-
-
        this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
        this.gradient2 = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
 
@@ -131,12 +129,12 @@ Vue.component('line-chart', {
         this.renderChart({
             labels: this.chartLabels,
             datasets: [{
-                label: 'Wave height',
+                label: 'Wave height (ft)',
                 backgroundColor: this.gradient2, //'#89E8D5'
                 data: this.chartData
             },
             {
-                label: 'Wind speed',
+                label: 'Wind speed (mph)',
                 backgroundColor: this.gradient, //#DCFFDA'
                 data: this.chartWind
             }]
