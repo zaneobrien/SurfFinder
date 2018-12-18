@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "test": "jshint dev-server.js Surf.js"
+    "test": "jshint build/dev-server.js js/Surf.js"
   },
   "repository": {
     "type": "git",
