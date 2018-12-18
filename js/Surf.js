@@ -1,5 +1,5 @@
 const API_KEY = "84001e540eb6e20bee6851c4917f560a";
-const PROXY_URL = "https://cors-anywhere.herokuapp.com/"
+const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
 const MAGICSEAWEED_URL = "https://magicseaweed.com/api/" + API_KEY + "/forecast/?spot_id=4564units=us&fields=timestamp,swell.maxBreakingHeight,wind.speed";
 const URL = PROXY_URL + MAGICSEAWEED_URL;
 
@@ -33,7 +33,7 @@ function getTimestamps(obj) {
     for (var i = 0;i< obj.length;i++) {
         array[i] = timeConverter(obj[i]["timestamp"]);
     }
-    return array
+    return array;
 }
 
 function getSurfHeight(obj) {
@@ -41,7 +41,7 @@ function getSurfHeight(obj) {
     for (var i = 0;i< obj.length;i++) {
             array[i] = obj[i]["swell"]["maxBreakingHeight"];
     }
-    return array
+    return array;
 }
 
 function getWind(obj) {
@@ -49,7 +49,7 @@ function getWind(obj) {
     for (var i = 0;i< obj.length;i++) {
             array[i] = obj[i]["wind"]["speed"];
     }
-    return array
+    return array;
 }
 
 
@@ -115,14 +115,14 @@ Vue.component('line-chart', {
   }
 },
     mounted () {
-       this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
-       this.gradient2 = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
+       this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450);
+       this.gradient2 = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450);
 
-       this.gradient.addColorStop(0, 'rgba(96, 222, 255, 0.5)')
+       this.gradient.addColorStop(0, 'rgba(96, 222, 255, 0.5)');
        this.gradient.addColorStop(0.5, 'rgba(96, 222, 255, 0.25)');
        this.gradient.addColorStop(1, 'rgba(96, 222, 255, 0)');
 
-       this.gradient2.addColorStop(0, 'rgba(86, 232, 118, 0.9)')
+       this.gradient2.addColorStop(0, 'rgba(86, 232, 118, 0.9)');
        this.gradient2.addColorStop(0.5, 'rgba(86, 232, 118, 0.25)');
        this.gradient2.addColorStop(1, 'rgba(86, 232, 118, 0)');
 
