@@ -5,5 +5,4 @@ node_js:
 before_script:
   - npm install
 script:
-  - node build/dev-server.js
   - npm test
