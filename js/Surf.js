@@ -112,7 +112,7 @@ Vue.component('line-chart', {
       responsive: true,
       maintainAspectRatio: false
     }
-  }
+};
 },
     mounted () {
        this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450);
@@ -141,7 +141,7 @@ Vue.component('line-chart', {
         }, this.options);
     } // end mounted
 
-}) // end Vue Component
+}); // end Vue Component
 
 var vm = new Vue({
   el: '.app',
@@ -164,8 +164,8 @@ var vm = new Vue({
               this.loaded = true;
             })
             .catch(err => {
-            })
+            });
      }
   }
 
-}) // end vm
+}); // end vm
