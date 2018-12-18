@@ -31,7 +31,7 @@ function timeConverter(UNIX_timestamp){
 function getTimestamps(obj) {
     var array = [];
     for (var i = 0;i< obj.length;i++) {
-        array[i] = timeConverter(obj[i]["timestamp"]);
+        array[i] = timeConverter(obj[i].timestamp);
     }
     return array;
 }
@@ -39,7 +39,7 @@ function getTimestamps(obj) {
 function getSurfHeight(obj) {
     var array = [];
     for (var i = 0;i< obj.length;i++) {
-            array[i] = obj[i]["swell"]["maxBreakingHeight"];
+            array[i] = obj[i].swell.maxBreakingHeight;
     }
     return array;
 }
@@ -47,7 +47,7 @@ function getSurfHeight(obj) {
 function getWind(obj) {
     var array = [];
     for (var i = 0;i< obj.length;i++) {
-            array[i] = obj[i]["wind"]["speed"];
+            array[i] = obj[i].wind.speed;
     }
     return array;
 }
