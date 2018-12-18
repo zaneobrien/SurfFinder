@@ -2,3 +2,9 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+  
+before_script:
+  - npm install
+script:
+  - node build/dev-server.js
+  - npm test
