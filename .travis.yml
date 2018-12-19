@@ -5,6 +5,10 @@ services:
 
 node_js:
   - "8"
+  
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::8}
 
 before_script:
   - npm install
