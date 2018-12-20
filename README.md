@@ -1,4 +1,11 @@
-[![Build Status](https://travis-ci.com/zaneobrien/SurfFinder.svg?branch=master)](https://travis-ci.com/zaneobrien/SurfFinder)
+| Build | Build status |
+|---------|--------------|
+| Azure Pipelines | [![Build Status](https://dev.azure.com/zaneobr/Hello%20World/_apis/build/status/zaneobrien.SurfFinder?branchName=master)](https://dev.azure.com/zaneobr/Hello%20World/_build/latest?definitionId=1?branchName=master) |
+| Travis |[![Build Status](https://travis-ci.com/zaneobrien/SurfFinder.svg?branch=master)](https://travis-ci.com/zaneobrien/SurfFinder) |
+
+
+
+
 
 # SurfFinder
 > Generate beautiful charts to evaluate surf conditions in San Diego
