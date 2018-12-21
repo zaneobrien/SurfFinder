@@ -24,8 +24,7 @@ after_success:
   - docker push dinosauce/surffinder:$COMMIT # Push Image to DockerHub
   - pip install --user awscli # Install aws cli w/o sudo
   - export PATH=$PATH:$HOME/.local/bin
-  - eval $(aws ecr get-login --no-include-email --region us-east-1) #needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envvars
   - sed -i'' -e "s;%BUILD_NUM%;$COMMIT;g" Dockerrun.aws.json # Replade Build number in Dockerrun file
   - zip -r $COMMIT.zip Dockerrun.aws.json # zip Dockerrun file
-  - eb init -r us-east-1 getantibody
+  - eb init -r us-west-1 surffinder
   - eb deploy -l $COMMIT
