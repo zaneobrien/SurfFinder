@@ -23,6 +23,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin # Login to Docker
   - docker push dinosauce/surffinder:$COMMIT # Push Image to DockerHub
   - pip install awsebcli --upgrade --user # Install aws cli w/o sudo
+  - eb --version
   - export PATH=$PATH:$HOME/.local/bin
   - sed -i'' -e "s;%BUILD_NUM%;$COMMIT;g" Dockerrun.aws.json # Replade Build number in Dockerrun file
   - zip -r $COMMIT.zip Dockerrun.aws.json # zip Dockerrun file
