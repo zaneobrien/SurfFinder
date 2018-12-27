@@ -26,17 +26,12 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin # Login to Docker
   - docker push dinosauce/surffinder:$COMMIT # Push Image to DockerHub
-
-before_deploy:
   - sed -i'' -e "s;%BUILD_NUM%;$COMMIT;g" Dockerrun.aws.json # Replade Build number in Dockerrun file
   - zip -r $COMMIT.zip Dockerrun.aws.json # zip Dockerrun file
   - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
   - aws configure set aws_access_key_id $AWS_SECRET_ACCESS_KEY
   - aws s3 mb s3://surffinder-$COMMIT --region us-west-2 #make S3 bucket
   - aws s3 cp $COMMIT.zip s3://surffinder-$COMMIT --region us-west-2
-
-deploy:
   - aws elasticbeanstalk create-application-version --region=us-west-2 --application-name SurfFinder --version-label version-$COMMIT --source-bundle S3Bucket=surffinder-$COMMIT,S3Key=$COMMIT.zip
   - aws elasticbeanstalk update-environment --application-name surffinder --environment-name Surffinder-env --version-label version-$COMMIT --region us-west-2
-after_deploy:
   - echo Done Deploying!
