@@ -14,7 +14,7 @@ env:
     - COMMIT=${TRAVIS_COMMIT::8}
 
 install:
-  - pip install awscli --upgrade
+  - sudo pip install awscli --upgrade
   - export PATH=$PATH:$HOME/.local/bin
 
 before_script:
