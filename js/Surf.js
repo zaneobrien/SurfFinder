@@ -5,7 +5,7 @@ const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
 const MAGICSEAWEED_URL = "https://magicseaweed.com/api/" + API_KEY + "/forecast/?spot_id=4564units=us&fields=timestamp,swell.maxBreakingHeight,wind.speed";
 const URL = PROXY_URL + MAGICSEAWEED_URL;
 
-Vue.use(axios)
+Vue.use(axios);
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000),
       months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
