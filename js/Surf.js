@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const API_KEY = "84001e540eb6e20bee6851c4917f560a";
 const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
