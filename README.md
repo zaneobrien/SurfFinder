@@ -4,8 +4,8 @@
 | Travis |[![Build Status](https://travis-ci.com/zaneobrien/SurfFinder.svg?branch=master)](https://travis-ci.com/zaneobrien/SurfFinder) |
 
 
-
-
+## Build Visual 
+![Alt text](https://github.com/zaneobrien/SurfFinder/blob/master/static/Project.png)
 
 # SurfFinder
 > Generate beautiful charts to evaluate surf conditions in San Diego.
@@ -27,6 +27,3 @@ npm install
 # serve at localhost:8081
 npm run build
 ```
-
-## License
-MIT
