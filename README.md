@@ -4,7 +4,7 @@
 | Travis |[![Build Status](https://travis-ci.com/zaneobrien/SurfFinder.svg?branch=master)](https://travis-ci.com/zaneobrien/SurfFinder) |
 
 
-## Build Visual 
+## Deployment Visual 
 ![Alt text](https://github.com/zaneobrien/SurfFinder/blob/master/static/Project.png)
 
 # SurfFinder
